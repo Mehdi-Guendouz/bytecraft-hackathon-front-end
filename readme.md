@@ -1,9 +1,12 @@
-# setup
+This is a React + Vite project
+to run the app:
 
-<ol>
-  <li> clone the repo </li>
-  <li> run : npm i </li>
-  <li> run : npm run dev </li>
-</ol>
+1-open terminal
 
-that's it.
+2-make sure you are inside the Front-end folder, if not type "cd Front-end" in terminal
+
+3-type "npm install" to install the needed packages
+
+4-type "npm run dev" to start the app in a local host
+
+5-follow the link provided in your terminal
