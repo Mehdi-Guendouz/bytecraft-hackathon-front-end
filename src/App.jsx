@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FullPage, Slide } from "react-full-page";
 import "./App.css";
+import ScrollRevealComponent from "./ScrollRevealComponent";
+
 import Hero from "./components/hero-section/Hero";
 import EventLocation from "./components/event-location/EventLocation";
 import EventAgenda from "./components/event-agenda/EventAgenda";
@@ -17,6 +19,26 @@ const fullPageOptions = {
 };
 
 function App() {
+  const [showBox, setShowBox] = useState(false);
+
+  useEffect(() => {
+    const delayTimeout = setTimeout(() => {
+      setShowBox(true);
+    }, 1500);
+
+    return () => clearTimeout(delayTimeout);
+  }, []);
+
+  const [isBlurred, setIsBlurred] = useState(false);
+
+  useEffect(() => {
+    const delayTimeout = setTimeout(() => {
+      setIsBlurred(true);
+    }, 2000);
+
+    return () => clearTimeout(delayTimeout);
+  }, []);
+
   return (
     <FullPage {...fullPageOptions}>
       <Slide>
@@ -24,7 +46,9 @@ function App() {
       </Slide>
 
       <Slide>
-        <EventLocation />
+        <ScrollRevealComponent>
+          <EventLocation />
+        </ScrollRevealComponent>
       </Slide>
 
       <Slide>
@@ -44,7 +68,9 @@ function App() {
       </Slide>
 
       <Slide>
-        <AboutBytecraft />
+        <ScrollRevealComponent>
+          <AboutBytecraft />
+        </ScrollRevealComponent>
       </Slide>
     </FullPage>
   );
