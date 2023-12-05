@@ -15,7 +15,7 @@
   }
   
   .text-decoration-2{
-    @apply font-bold text-[45px] mt-2 tracking-wide
+    @apply font-bold text-[38px] md:text-[45px] mt-2 tracking-wide  uppercase
   }
   .box{
     color: white;
@@ -38,7 +38,7 @@
   }
   
   .btn-div{
-    @apply bg-gradient-to-r mt-4 from-[#03BAE4] to-[#A036FC] w-fit h-fit rounded-[10px]
+    @apply bg-gradient-to-r md:mt-8 mt-4 from-[#03BAE4] to-[#A036FC] w-fit h-fit rounded-[10px]
   }
   
   .text-decoration{
@@ -59,13 +59,19 @@
   .btn:hover{
     @apply bg-gradient-to-r from-[#03BAE4] to-[#A036FC]
   }
-  .logo-syphax {
-    @apply w-full z-0 h-full;
+  .logo {
+    @apply w-full z-0 h-full  ;
     filter: blur(0);
     transition: filter 0.5s ease-in-out;
   }
   
   .blurred {
     filter: blur(18px);
+  }
+
+  .box2{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.08);
+    @apply relative p-6 md:p-16 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-10 md:flex-row 
   }
   

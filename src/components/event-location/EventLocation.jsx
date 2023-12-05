@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import './file.css'
+import './style.css'
 
 const EventLocation = () => {
   const [showBox, setShowBox] = useState(false);
@@ -29,8 +29,8 @@ const EventLocation = () => {
       className='w-full flex flex-col items-center h-screen relative'
     >
       <motion.div initial={{ y: 400 }} animate={{ y: 0 }} transition={{ delay: 0.6 }}>
-        <h3 className='text-decoration-1'>Event Location</h3>
-        <h1 className='text-decoration-2'>Syphax Hotel</h1>
+        <h3 className='text-decoration-1 md:mt-12'>Event Location</h3>
+        <h1 className='text-decoration-2 md:py-2'>Syphax Hotel</h1>
       </motion.div>
       <motion.div
         initial={{ y: 400, x: -180 }}
@@ -38,7 +38,7 @@ const EventLocation = () => {
         transition={{ delay: 0.6 }}
         className='absolute top-1/2 z-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[360px] h-[360px]'
       >
-        <img className={`logo-syphax ${isBlurred ? 'blurred' : ''}`} src='/event_location/syphax.png' alt='SYPHAX' style={{ zIndex: 1 }} />
+        <img className={`logo ${isBlurred ? 'blurred' : ''}`} src='/event_location/syphax.png' alt='SYPHAX' style={{ zIndex: 1 }} />
       </motion.div>
       {showBox && (
         <>
