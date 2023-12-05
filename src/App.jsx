@@ -19,9 +19,9 @@ const fullPageOptions = {
 function App() {
   return (
     <FullPage {...fullPageOptions}>
-      {/* <Slide>
+      <Slide>
         <Hero />
-      </Slide> */}
+      </Slide>
 
       <Slide>
         <EventLocation />

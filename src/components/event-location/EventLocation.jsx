@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-
+import './file.css'
 
 const EventLocation = () => {
   const [showBox, setShowBox] = useState(false);
