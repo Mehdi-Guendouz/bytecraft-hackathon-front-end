@@ -10,10 +10,32 @@ import MentorsJuries from "./components/mentors & juries/MentorsJuries";
 import AboutBytecraft from "./components/aboutBytecraft/AboutBytecraft";
 
 const fullPageOptions = {
-  scrollSensitivity: 3,
-  touchSensitivity: 1,
-  scrollSpeed: 400, // Adjust the scroll speed as needed
+  scrollSensitivity: 0.00000001, // Set to a low value to scroll one section at a time
+  touchSensitivity: 0,
+  scrollSpeed: 700, // Adjust the scroll speed as needed
   resetSlides: true,
+  anchors: [
+    "hero",
+    "location",
+    "date",
+    "sponsors-section",
+    "agenda",
+    "mentors-juries",
+    "about-bytecraft",
+  ],
+  css3: true,
+  navigation: true,
+  navigationPosition: "left",
+  navigationTooltips: [
+    "hero",
+    "location",
+    "date",
+    "sponsors-section",
+    "agenda",
+    "mentors-juries",
+    "about-bytecraft",
+  ],
+  scrollOverflow: true,
 };
 
 function App() {
@@ -22,27 +44,21 @@ function App() {
       <Slide>
         <Hero />
       </Slide>
-
       <Slide>
         <EventLocation />
       </Slide>
-
       <Slide>
         <EventDate />
       </Slide>
-
       <Slide>
         <Sponsors />
       </Slide>
-
-      <Slide>
-        <MentorsJuries />
-      </Slide>
-
       <Slide>
         <EventAgenda />
       </Slide>
-
+      <Slide>
+        <MentorsJuries />
+      </Slide>
       <Slide>
         <AboutBytecraft />
       </Slide>
