@@ -20,7 +20,7 @@
   .box{
     color: white;
     background-color: rgba(255, 255, 255, 0.08);
-    @apply relative p-4 md:p-16 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-10 md:flex-row 
+    @apply relative p-4 md:p-16 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-2 md:gap-12 md:flex-row 
   }
   
   .bg-image{
@@ -28,9 +28,7 @@
     position: relative;
     overflow: hidden;
     display: block;
-    width:250px ;
-    height: 220px;
-    @apply  rounded-[26px]
+    @apply  rounded-[26px] h-[200px] w-[250px] md:w-[250px] md:h-[220px]
   }
   
   .bg-image:hover{
