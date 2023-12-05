@@ -42,9 +42,7 @@ function App() {
   return (
     <FullPage {...fullPageOptions}>
       <Slide>
-        <ScrollRevealComponent>
-          <Hero />
-        </ScrollRevealComponent>
+        <Hero />
       </Slide>
 
       <Slide>
@@ -54,27 +52,19 @@ function App() {
       </Slide>
 
       <Slide>
-        <ScrollRevealComponent>
-          <EventDate />
-        </ScrollRevealComponent>
+        <EventDate />
       </Slide>
 
       <Slide>
-        <ScrollRevealComponent>
-          <Sponsors />
-        </ScrollRevealComponent>
+        <Sponsors />
       </Slide>
 
       <Slide>
-        <ScrollRevealComponent>
-          <MentorsJuries />
-        </ScrollRevealComponent>
+        <MentorsJuries />
       </Slide>
 
       <Slide>
-        <ScrollRevealComponent>
-          <EventAgenda />
-        </ScrollRevealComponent>
+        <EventAgenda />
       </Slide>
 
       <Slide>

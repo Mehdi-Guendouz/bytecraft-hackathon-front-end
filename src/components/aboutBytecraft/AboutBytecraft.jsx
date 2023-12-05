@@ -27,16 +27,16 @@ const AboutBytecraft = () => {
   return (
     <>
       <motion.section
-        className='w-full flex flex-col items-center h-screen relative'
+        className='w-screen flex flex-col items-center h-screen relative'
       >
-        <motion.div initial={{ y: 400 }} animate={{ y: 0 }} transition={{ delay: 0.6 }}>
+        <motion.div initial={{ y: 400 }} animate={{ y: 0 }} transition={{ delay: 1,duration:0.3 }}>
           <h3 className='text-decoration-1 mt-12'>Bytecraft</h3>
           <h1 className='text-decoration-2 pt-4'>Bytecraft CLub</h1>
         </motion.div>
         <motion.div
           initial={{ y: 400, x: -180 }}
           animate={{ y: -110, x: -150 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 1,duration:0.3 }}
           className='absolute top-1/2 z-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[300px] h-[260px]'
         >
           <img className={`logo ${isBlurred ? 'blurred' : ''}`} src='/about_bytecraft/logo.png' alt='SYPHAX' style={{ zIndex: 1 }} />
@@ -47,7 +47,7 @@ const AboutBytecraft = () => {
               <motion.div
                 initial={{  y: 500 }}
                 animate={{  y: 0 }}
-                transition={{ delay: 0.8 }}
+                transition={{ delay: 1,duration:0.3 }}
                 className='bloc text-white md:text-[30px] lg:text-[35px] text-[24px] w-[350px] lg:w-[800px] md:w-[600px]'
               >
                 Syphax Hotel offers a comfortable and welcoming retreat for visitors. As a 3-star establishment, it combines

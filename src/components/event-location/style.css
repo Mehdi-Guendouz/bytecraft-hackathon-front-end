@@ -20,6 +20,7 @@
   .box{
     color: white;
     background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.10) inset;
     @apply relative p-4 md:p-16 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-2 md:gap-12 md:flex-row 
   }
   
@@ -28,7 +29,8 @@
     position: relative;
     overflow: hidden;
     display: block;
-    @apply  rounded-[26px] h-[200px] w-[250px] md:w-[250px] md:h-[220px]
+    @apply  rounded-[26px] h-[200px] w-[330px] md:w-[250px] md:h-[220px];
+    transition-duration: .7s;
   }
   
   .bg-image:hover{
@@ -70,6 +72,15 @@
   .box2{
     color: white;
     background-color: rgba(255, 255, 255, 0.08);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.10) inset;
     @apply relative p-6 md:p-16 rounded-[30px] mx-auto mt-6 w-fit h-fit items-center justify-center flex flex-col gap-10 md:flex-row 
+  }
+
+  .top-image-bg{
+    filter:blur(8px);
+    @apply absolute left-0 -top-[100px] w-[350px] h-[400px]
+  }
+  .button-image-bg{
+    @apply absolute blur-md right-0 z-0 -bottom-[390px] md:-bottom-[300px] w-[350px] h-[400px]
   }
   
