@@ -1,6 +1,7 @@
 import React from "react";
 import { FullPage, Slide } from "react-full-page";
-import "./App.css";
+import { createRoot } from "react-dom/client";
+import "./index.css";
 import Hero from "./components/hero-section/Hero";
 import EventLocation from "./components/event-location/EventLocation";
 import EventAgenda from "./components/event-agenda/EventAgenda";
@@ -50,4 +51,6 @@ function App() {
   );
 }
 
-export default App;
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App />);

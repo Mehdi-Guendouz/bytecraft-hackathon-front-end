@@ -1,0 +1,89 @@
+.sponsors-section {
+  width: 100%;
+  max-height: 100vh;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.sponsor-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.sponsors-section p {
+  color: var(--White, #e6f4f3);
+  text-align: center;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 0;
+  width: min(100%, 800px);
+}
+.sponsors-section .special-p {
+  color: var(--Green, #1abe6c);
+  text-shadow: 0px 0px 15px #1abe6c;
+  font-family: Good Times;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 200;
+  line-height: normal;
+  letter-spacing: 4.4px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.sponsors-section h2 {
+  color: var(--White, #e6f4f3);
+  font-family: Good Times;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 72px; /* 138.462% */
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+.sponsorSlider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sponsorImg {
+  display: flex;
+  width: 400px;
+  box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, 0.1) inset;
+  backdrop-filter: blur(15px);
+  border-radius: 35px;
+}
+
+.swiper-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  max-width: 80%;
+  overflow: hidden;
+  cursor: grab;
+}
+
+.slide-wrapper {
+  min-height: 100vh;
+  padding: 0; /* Remove padding as it might interfere with centering */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.swiper-slide {
+  width: 400px;
+}
+.swiper-slide-active {
+  transform: scale(1.2); /* Increase scale for centered slide */
+  opacity: 0.9; /* Maintain full opacity for centered slide */
+}
+.swiper-slide:not(.swiper-slide-active) {
+  filter: opacity(0.75); /* Reduce opacity for non-centered slides */
+}
