@@ -1,9 +1,11 @@
 import React from "react";
+
 import { FullPage, Slide } from "react-full-page";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 /* import Hero from "./components/hero-section/Hero";
  */import EventLocation from "./components/event-location/EventLocation";
+
 import EventAgenda from "./components/event-agenda/EventAgenda";
 import EventDate from "./components/event-date/EventDate";
 import Sponsors from "./components/sponsors/Sponsors";
@@ -13,12 +15,12 @@ import AboutBytecraft from "./components/aboutBytecraft/AboutBytecraft";
 import "aos/dist/aos.css";
 import Aos from "aos"; */
 
-const fullPageOptions = {
-  scrollSensitivity: 3,
-  touchSensitivity: 1,
-  scrollSpeed: 400, // Adjust the scroll speed as needed
-  resetSlides: true,
-};
+// const fullPageOptions = {
+//   scrollSensitivity: 3,
+//   touchSensitivity: 1,
+//   scrollSpeed: 400, // Adjust the scroll speed as needed
+//   resetSlides: true,
+// };
 
 function App() {
   /* useEffect(() => {
@@ -76,6 +78,7 @@ function App() {
         <AboutBytecraft />
       </Slide>
     </FullPage>
+
   );
 }
 
