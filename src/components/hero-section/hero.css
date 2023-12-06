@@ -1,0 +1,122 @@
+:root {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+/* Good Times Heavy */
+@font-face {
+  font-family: "GoodTimesHv";
+  src: url("/src/GoodTimes/GoodTimesHv-Regular.eot");
+  src: url("/src/GoodTimes/GoodTimesHv-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/src/GoodTimes/GoodTimesHv-Regular.woff2") format("woff2"),
+    url("/src/GoodTimes/GoodTimesHv-Regular.woff") format("woff"),
+    url("/src/GoodTimes/GoodTimesHv-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Light */
+@font-face {
+  font-family: "GoodTimesLt";
+  src: url("/src/GoodTimes/GoodTimesLt-Regular.eot");
+  src: url("/src/GoodTimes/GoodTimesLt-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/src/GoodTimes/GoodTimesLt-Regular.woff2") format("woff2"),
+    url("/src/GoodTimes/GoodTimesLt-Regular.woff") format("woff"),
+    url("/src/GoodTimes/GoodTimesLt-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Regular */
+@font-face {
+  font-family: "GoodTimesRg";
+  src: url("/src/GoodTimes/GoodTimesRg-Regular.eot");
+  src: url("/src/GoodTimes/GoodTimesRg-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("/src/GoodTimes/GoodTimesRg-Regular.woff2") format("woff2"),
+    url("/src/GoodTimes/GoodTimesRg-Regular.woff") format("woff"),
+    url("/src/GoodTimes/GoodTimesRg-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Good Times Bold */
+@font-face {
+  font-family: "GoodTimesRg";
+  src: url("/src/GoodTimes/GoodTimesRg-Bold.eot");
+  src: url("/src/GoodTimes/GoodTimesRg-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("/src/GoodTimes/GoodTimesRg-Bold.woff2") format("woff2"),
+    url("/src/GoodTimes/GoodTimesRg-Bold.woff") format("woff"),
+    url("/src/GoodTimes/GoodTimesRg-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+.title h2 {
+  font-size: 1rem;
+  font-family: "GoodTimesLt";
+  font-weight: 600;
+  color: #03a6ff;
+  text-shadow: 0px 0px 20px rgba(3, 166, 255, 0.8);
+  margin-bottom: 10px;
+  letter-spacing: 4px;
+}
+.title h1 {
+  font-size: 2rem;
+  font-family: "GoodTimesHv";
+  color: #fdfdfd;
+}
+.title.blue-to-purple h2 {
+  color: transparent;
+  background: linear-gradient(to right, #03a6ff 0%, #5546ff 100%);
+  background-clip: text;
+}
+.title.green-to-blue h2 {
+  color: transparent;
+  background: linear-gradient(to right, #1abe6c 0%, #03a6ff 100%);
+  background-clip: text;
+  text-shadow: 0px 0px 20px rgba(26, 190, 108, 0.8);
+}
+.title.green h2 {
+  color: #1abe6c;
+  text-shadow: 0px 0px 20px rgba(26, 190, 108, 0.8);
+}
+.title.purple h2 {
+  color: #5546ff;
+  text-shadow: 0px 0px 20px rgba(85, 70, 255, 0.8);
+}
+
+.hero-bg-gradient {
+  background: linear-gradient(
+    180deg,
+    rgba(160, 54, 252, 0.3) 0%,
+    rgba(160, 54, 252, 0) 100%
+  );
+  background-color: #1f1f1f;
+}
+.title span {
+  transition-duration: 400ms;
+  background: none;
+}
+.title span:hover {
+  background: linear-gradient(90deg, #03a6ff 0%, #5546ff 100%);
+  color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0px 0px 20px rgba(15, 240, 229, 0.5));
+}
+.logo-bounce {
+  animation: logoBounce 3s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes logoBounce {
+  0%,
+  100% {
+    top: 50%;
+  }
+  50% {
+    top: 48%;
+  }
+}
